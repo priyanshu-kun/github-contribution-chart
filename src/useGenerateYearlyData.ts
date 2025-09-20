@@ -30,6 +30,8 @@ export const useGenerateYearlyData = (color: any, year: string) => {
         ))
     }, [startDate, color])
 
+    console.log(data)
+
 
     const monthLabels: { index: number; name: string }[] = useMemo(() => {
         const labels: { index: number; name: string }[] = [];

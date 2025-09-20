@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import ContributionChart from './ContributionChart'
+import { validYears } from '../utils/validYears';
 
 function GithubContributionsHeatmap() {
     const [color, setColor] = useState('green');
     const [year, setYear] = useState('2025');
+
+    console.log("validYears: ", validYears());
 
 
     const handleClickOnDay = (day: any) => {
